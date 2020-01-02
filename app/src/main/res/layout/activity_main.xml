@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:background="#7FFFD4"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nama"
+            android:padding="16dp"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/nama"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Alamat"
+            android:padding="16dp"
+            tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/subjek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:text="Subjek"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/pesan"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/subjek"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:text="Pesan"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+        <Button
+            android:id="@+id/hapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pesan"
+            android:layout_alignLeft="@id/pesan"
+            android:layout_marginTop="0dp"
+            android:text="Hapus"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:background="#FFFFE0"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/hapus"
+            android:layout_alignBottom="@id/hapus"
+            android:layout_alignParentRight="true"
+            android:text="Kirim"
+            android:layout_margin="3dp"
+            android:background="#FFFFE0"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_alignBaseline="@id/hapus"
+            android:layout_alignBottom="@id/hapus"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp"
+            android:background="#FFFFE0"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
